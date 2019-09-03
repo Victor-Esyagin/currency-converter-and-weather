@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col l12 center-align">
+                <h1>Конвертер валют</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l4 left-align">
+                Базовая валюта EUR:
+                <div class="input-field inline">
+                    <input id="eur" type="number" class="validate ">
+                    <label for="eur">EUR</label>
+                    <span class="helper-text">Введите количество EUR</span>
+                </div>
+            </div>
+            <div class="col l8 ">
+                <a class="waves-effect waves-light btn-small blue lighten-1" data="RUB">Рубль <i
+                        class="fas fa-ruble-sign"></i></a>
+                <a class="waves-effect waves-light btn-small blue lighten-1" data="USD">Доллар
+                    <i class="fas fa-dollar-sign"></i></a>
+                <a class="waves-effect waves-light btn-small blue lighten-1" data="JPY">Йена
+                    <i class="fas fa-yen-sign"></i></a>
+                <a class="waves-effect waves-light btn-small blue lighten-1" data="CHF">Франк
+                    <i class="fas fa-coins"></i></a>
+                <a class="waves-effect waves-light btn-small blue lighten-1" data="CNY">Юань
+                    <i class="fas fa-coins"></i></a>
+                <a class="waves-effect waves-light btn-small blue lighten-1" data="UAH"> Гривна
+                    <i class=" fas fa-coins"></i></a>
+                <div class="field center-align"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12 center-align">
+                <h4>Погода в вашем городе</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l12 ">
+                <p class="annotation">Для Российских городов допускается ввод на кириллице, для остальных запросов ввод
+                    строго на латинице.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col l5">
+                <input id="city" type="text" class="validate">
+                <label for="city">Введите название города</label>
+                <a class="waves-effect waves-light btn green accent-3 weather" id="btn">Нажмите чтобы получить
+                    прогноз!</a>
+            </div>
+            <div class="col l3 offset-l2 ">
+                <div class="icon"></div>
+                <div class="field-weather"></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/621e9702b3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/currency.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
