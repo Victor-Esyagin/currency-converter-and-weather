@@ -1,0 +1,32 @@
+body {
+    background-color: #f3f0f0;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.28rem;
+}
+
+.field {
+    margin-top: 20px;
+    font-size: 24px;
+
+}
+
+.field-weather {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.5;
+}
+
+.weather {
+    margin-top: 20px;
+}
+
+.icon {
+    margin-left: 50px;
+}
+
+.annotation {
+    margin: 0;
+}
